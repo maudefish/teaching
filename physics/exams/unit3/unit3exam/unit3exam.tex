@@ -1,6 +1,7 @@
 \documentclass[11pt,addpoints,letterpaper]{exam}
-\usepackage{amsmath,geometry,tcolorbox,mdframed,xcolor}
-\geometry{margin=0.85in}
+\usepackage{amsmath,tcolorbox,mdframed,xcolor}
+\usepackage[top=0.75in, bottom=0.85in, left=1in, right=1in]{geometry} % Adjust margins
+
 \usepackage{siunitx}
 \usepackage{nccmath}
 \usepackage{physics}
@@ -9,6 +10,8 @@
 
 
 \noprintanswers
+
+
 % Define variables
 \newcommand{\instructor}{Mr. Rodriguez}
 \newcommand{\coursename}{Conceptual Physics A}
@@ -52,15 +55,53 @@
 \end{center}
 }
 \newcommand{\instructionbox}[1]{\begin{center}\fbox{\fbox{{\centering #1}}}\end{center}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\learningStandard}[1]{
+    \small
+    \tcbox[colback=gray!10, colframe=black, boxrule=0.5mm, sharp corners=southwest]{
+        \textbf{#1} \hspace{0.5cm} % Spacing between title and vertical rule
+        \textcolor{gray}{\vrule height 10pt width 0.3pt}\hspace{0.5cm} % Lighter and thinner vertical rule
+        \textbf{Score:} \rule{1.5cm}{0.5pt} /10
+    }
+}
+
+\newtcolorbox{learningStandardBox}[2]{%
+    title={Learning Standard #1}, % Title with manual input for the standard number
+    fonttitle=\bfseries\small,  % Title font style
+    colback=gray!15, % Background color for main content
+    colframe=black, % Frame color
+    coltitle=black!80, % Font color for title
+    colbacktitle=gray!60, % Background color for title
+    boxrule=0.5mm, % Border thickness
+    sharp corners=south, % Rounded top corners only
+    width=\textwidth, % Full text width
+    halign=center, % Center-align content
+    top=10pt, % Adds extra space at the top to move content down
+}
+\newcommand{\standardBox}[2]{%
+    \begin{learningStandardBox}{#1}{#2} % Passes number and name as arguments
+        \begin{minipage}[t]{0.5\textwidth} % Left section for standard name
+            \textit{#2} % Italicized name of the standard
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.25\textwidth} % Middle section for score
+            \textbf{Score:} \rule{1.5cm}{0.5pt} /10
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.2\textwidth} % Right section for grade
+            \textbf{Grade:} \phantom{1.2cm}
+        \end{minipage}
+    \end{learningStandardBox}
+}
+%%%%%%%%%%%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 % Place name, section, and instructor details at the top left
-\vspace*{-0.5in} % Adjust this to control vertical spacing from the top of the page
+\vspace*{-0.2in} % Adjust this to control vertical spacing from the top of the page
 \noindent
 \makebox[0.7\textwidth][l]{Name:\enspace\hrulefill} \hfill \makebox[0.3\textwidth]{ Period:\enspace\hrulefill} \\[1cm]
 \noindent
-\makebox[0.7\textwidth][l]{Instructor: \enspace\texttt{\instructor}}\hfill \hspace*{0pt}\hfill{Score:\underline{\hspace{2cm}}/\numpoints}
+\makebox[0.7\textwidth][l]{Instructor: \enspace\texttt{\instructor}}\hfill \hspace*{0pt}\hfill{Total Score:\underline{\hspace{2cm}}/\numpoints}
 \vspace{0.5in} % Space before the title
 
 
@@ -84,8 +125,11 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LS 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{\small \tcbox{Learning Standard 3.1: The Law of Conservation of Energy}}
-\instructionbox{Multiple Choice: Circle \textbf{one} option per question.}
+% \section*{\small \tcbox{Learning Standard 3.1: The Law of Conservation of Energy}}
+% \section*{\learningStandard{Learning Standard 3.1: The Law of Conservation of Energy}}
+\standardBox{3.1}{The Law of Conservation of Energy}
+
+\instructionbox{\emph{Multiple Choice}: Circle \textbf{one} option per question.}
 
 \begin{questions}
 
@@ -111,7 +155,7 @@
 
 
 \pagebreak
-\instructionbox{Fill in the Blank: For each blank space, choose \textbf{one} item from the word bank below that best fits.}
+\instructionbox{\emph{Fill in the Blank}: For each blank space, choose \textbf{one} item from the word bank below.}
 
 \equationboxx{Word Bank}{
 \begin{multicols}{2}
@@ -127,7 +171,7 @@
     \end{itemize}
 \end{multicols}
 }
-\question[3] Use the word bank above identify which types of energy are converted into which other types of energy by each machine. 
+\question[3] Use the word bank above identify which types of energy are converted into which other types of energy by each machine. Some words may be used more than once; others may not end up used at all. 
 \begin{parts}
 \qsppp
 \part A \textbf{loudspeaker} converts \fillin[electrical][3cm] energy into \fillin[sound][3cm] energy.
@@ -142,7 +186,7 @@
 \qsppp
 \part A \textbf{waterfall turbine generator} converts \fillin[gravitational potential][3cm] energy into \fillin[electrical][3cm] energy. 
 \end{parts}
-\instructionbox{Free Response Questions: Answers must be in \textbf{complete sentences} to receive full credit.}
+\instructionbox{\emph{Free Response}: Answers must be in \textbf{complete sentences} to receive full credit.}
 \question[3] Use your knowledge of the law of conservation of energy to explain how \emph{all} energy on Earth actually came from the Sun at one point or another. Make sure to include the following terms in your argument: \emph{solar, plants, animals, chemical energy, humans, fossil fuels}. 
 
 
