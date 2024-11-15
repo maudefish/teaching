@@ -1,0 +1,333 @@
+\documentclass[11pt,addpoints,letterpaper]{exam}
+\usepackage{amsmath,geometry,tcolorbox,mdframed,xcolor}
+\geometry{margin=0.85in}
+\usepackage{siunitx}
+\usepackage{nccmath}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{multicol}
+
+
+\noprintanswers
+% Define variables
+\newcommand{\instructor}{Mr. Rodriguez}
+\newcommand{\coursename}{Conceptual Physics A}
+\newcommand{\term}{Fall}
+\newcommand{\courseyear}{2024} % Renamed \year to \courseyear to avoid conflict
+\newcommand{\instructions}{}
+\newcommand{\worksheetname}{Final Exam}
+\newcommand{\qsp}{\vspace{5cm}}
+\newcommand{\qspp}{\vspace{2.5cm}}
+\newcommand{\qsppp}{\vspace{0.5cm}}
+
+\tcbset{
+    myboxstyle/.style={
+        colback=white,        % Background color
+        colframe=black,       % Border color
+        boxrule=0.5pt,        % Border thickness
+        arc=5mm,              % Rounding radius
+        boxsep=2mm,           % Padding around text
+        left=4pt, right=4pt,  % Inner padding on left and right
+    }
+}
+\newcommand{\equationbox}[2]{
+\begin{center}
+\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
+% \vspace{-0.2in} % Tightens the space between the title and content
+\begin{flushleft}
+\begin{align}
+#2
+\end{align}
+\end{flushleft}
+\end{tcolorbox}
+\end{center}
+}
+\newcommand{\equationboxx}[2]{
+\begin{center}
+\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
+\begin{flushleft}
+#2
+\end{flushleft}
+\end{tcolorbox}
+\end{center}
+}
+\newcommand{\instructionbox}[1]{\begin{center}\fbox{\fbox{{\centering #1}}}\end{center}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Place name, section, and instructor details at the top left
+\vspace*{-0.5in} % Adjust this to control vertical spacing from the top of the page
+\noindent
+\makebox[0.7\textwidth][l]{Name:\enspace\hrulefill} \hfill \makebox[0.3\textwidth]{ Period:\enspace\hrulefill} \\[1cm]
+\noindent
+\makebox[0.7\textwidth][l]{Instructor: \enspace\texttt{\instructor}}\hfill \hspace*{0pt}\hfill{Score:\underline{\hspace{2cm}}/\numpoints}
+\vspace{0.5in} % Space before the title
+
+
+% Manually add the title without using \maketitle
+\begin{centering}
+\noindent\textbf{\Large \worksheetname} \\[0.1in]
+\noindent\texttt{\coursename} \\
+\noindent\textit{\term\ \courseyear} \\
+\end{centering}
+
+\vspace{0.2in}
+
+% Special Instructions
+% \begin{center}
+% \fbox{\fbox{\parbox{5.5in}{\centering
+% \instructions}}}
+% \end{center}
+
+
+% Relevant Equations box with no extra space and left-aligned equations
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LS 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\small \tcbox{Learning Standard 3.1: The Law of Conservation of Energy}}
+\instructionbox{Multiple Choice: Circle \textbf{one} option per question.}
+
+\begin{questions}
+
+\question[2] Which of the following statements best describes the law of conservation of energy? 
+\qsppp
+\begin{choices}
+\choice Energy can be created or destroyed, but it cannot change from one form to another.
+\choice Energy can be transferred or transformed but is always lost in the process.
+\CorrectChoice Energy cannot be created or destroyed; it can only change from one form to another.
+\choice Energy can only be conserved in closed systems, and is always constant in open systems.
+\end{choices}
+\qsppp
+
+\question[2] What are the SI (metric) units of energy?
+\qsppp
+\begin{choices}
+\choice Newtons (N)
+\choice kilograms (kg)
+\CorrectChoice Joules (J)
+\choice meters per second (m/s)
+\end{choices}
+\qsppp
+
+
+\pagebreak
+\instructionbox{Fill in the Blank: For each blank space, choose \textbf{one} item from the word bank below that best fits.}
+
+\equationboxx{Word Bank}{
+\begin{multicols}{2}
+    \begin{itemize}
+    \item Chemical
+    \item Electrical
+    \item Elastic
+    \item Gravitational Potential
+    \item Kinetic
+    \item Light
+    \item Sound
+    \item Thermal
+    \end{itemize}
+\end{multicols}
+}
+\question[3] Use the word bank above identify which types of energy are converted into which other types of energy by each machine. 
+\begin{parts}
+\qsppp
+\part A \textbf{loudspeaker} converts \fillin[electrical][3cm] energy into \fillin[sound][3cm] energy.
+\qsppp
+\part A \textbf{solar panel} converts \fillin[solar][3cm] energy into \fillin[electric][3cm] energy.
+\qsppp
+\part A \textbf{car engine} converts \fillin[chemical][3cm] energy into \fillin[kinetic][3cm] energy.
+\qsppp
+\part A \textbf{flashlight} converts \fillin[chemical][3cm] energy into \fillin[light][3cm] energy.
+\qsppp
+\part A \textbf{slingshot} converts \fillin[elastic][3cm] energy into \fillin[kinetic][3cm] energy.
+\qsppp
+\part A \textbf{waterfall turbine generator} converts \fillin[gravitational potential][3cm] energy into \fillin[electrical][3cm] energy. 
+\end{parts}
+\instructionbox{Free Response Questions: Answers must be in \textbf{complete sentences} to receive full credit.}
+\question[3] Use your knowledge of the law of conservation of energy to explain how \emph{all} energy on Earth actually came from the Sun at one point or another. Make sure to include the following terms in your argument: \emph{solar, plants, animals, chemical energy, humans, fossil fuels}. 
+
+
+\pagebreak
+\begin{solution}[10cm]
+Newton's First Law states that an object in motion will remain in motion unless acted upon by another force. Once the rocket ship sufficiently escapes the gravitational pull of the planets and Sun of our solar system, it no longer needs its thrusters to accelerate towards it destination. Instead, \emph{the rocket will continue flying through space at a constant speed and direction} until it comes into the vicinity of another star or planet, which will then alter the motion of the rocket via gravity. 
+\end{solution}
+
+\question[3] You are sitting on a jet plane on your way from San Francisco to New York City. While aboard the plane, the plane moves at a constant velocity of $\vb{v}=\SI{600}{mph}$ eastward. You take a coin and flip it directly upwards, after which is falls perfectly back in your hand. Explain in physics terms why the coin falls back into your hand rather than flying away from you at $\vb{v}=\SI{-600}{mph}$. 
+
+\begin{solution}[1cm]
+While you are a onboard a jet plane flying from San Francisco to New York at a steady speed of 500 mph westward, everything inside the train is moving at the same speed, including you and the coin in your hand. \textbf{Newton's First Law} states that an object's \textbf{inertia} keeps that object moving at the same speed and direction unless a new force acts upon it. So, when you flip the coin straight up, it doesn’t suddenly stop moving westward. Instead, the coin keeps moving at 80 mph westward as it goes up and back into your hand, just as you and the train continue moving at 80 mph westward.
+\end{solution}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LS 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\small \tcbox{Learning Standard 2.2: Newton's Second Law of Motion}}
+\instructionbox{Multiple Choice: Circle \textbf{one} option per question.}
+
+\question[2] What is Newton's Second Law? 
+\qsppp
+\begin{choices}
+\choice All objects move in straight lines forever.
+\CorrectChoice The force exerted on an object is equal to its mass times its acceleration.
+\choice An object will only change its state of motion or rest if acted upon by an external force.
+\choice For every action, there is an equal and opposite reaction.
+\end{choices}
+\qsppp
+\question[2] In everyday life, we often alter the motion of the objects around us by either \textbf{pushing} or \textbf{pulling} them. 
+\begin{parts}
+\part What physical quantity corresponds to such a push or a pull?
+\qsppp
+\begin{choices}
+\choice Weight
+\choice Velocity
+\CorrectChoice Force
+\choice Mass
+\end{choices}
+\qsppp
+
+\part What are the SI \textbf{units} of this quantity?
+\qsppp
+\begin{choices}
+\CorrectChoice newtons (N)
+\choice kilograms (kg)
+\choice meters per second (m/s)
+\choice joules (J)
+\end{choices}
+
+\end{parts}
+
+\pagebreak
+\instructionbox{Free Response Questions: Answers must be in \textbf{complete sentences} to receive full credit.}
+
+
+\question[3] You are on a spaceship deep in outer space, far away from any planets or stars (\textit{i.e.}, there is \textbf{no gravity}). In your large and otherwise empty spaceship, there are two unmarked, equally sized boxes floating next to you. One box is full of Q-tips, and the other is full of bricks. Explain how you can use Newton's Second Law to determine which box is full of Q-tips and which box is full of bricks. 
+
+\begin{solution}[10cm]
+Recall Newton's Second Law: 
+\begin{align}
+F = ma .
+\end{align}
+We know that if gravity \emph{was} acting upon the boxes, the box full of lead would weigh more than the box full of feathers. However, we also know (despite the absence of gravity) that lead is \emph{denser} than feathers, and thus the \textbf{mass} of the box of lead will be greater than the mass of the box of feathers, even in space. Rearranging Newton's Second Law in terms of the acceleration shows us that 
+\begin{align}
+a = \frac{F}{m}.
+\end{align}
+In other words, \emph{the larger the mass of the object, the smaller the acceleration will be}. We could thus propose an experiment: Give each box an identical push with the same force $F$. The box that accelerates \emph{less} will be the one with the greater mass. In our experiment, we would find that the box full of lead is harder to accelerate than the box of feathers because it has more mass.
+\end{solution}
+
+\question[3] You are building a house out of hay. With your acute physical senses, you have discerned that you need to apply \SI{3}{N} of force to accelerate one bale of hay at \SI{2}{m/s^2}. How much force would you need to accelerate 200 bales of hay at once at \SI{2}{m/s^2}?
+\begin{solution}[1cm]
+If the force required to accelerate a single brick at $a=\SI{1}{m/s^2}$ is $F_{brick}=\SI{1}{N}$, then the total force required to accelerate 100 bricks is
+\begin{align*}
+F_{total} = 100\times F_{brick} = 100 \times (\SI{1}{N}) = \boxed{\SI{100}{N}}
+\end{align*}
+\end{solution}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LS 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\small \tcbox{Learning Standard 2.3: Newton's Third Law of Motion}}
+\instructionbox{Multiple Choice: Circle \textbf{one} option per question.}
+
+
+\question[2] What is Newton's Third Law? 
+\qsppp
+\begin{choices}
+\choice An object will only change its state of motion or rest if acted upon by an external force.
+\CorrectChoice For every action, there is an equal and opposite reaction.
+\choice All objects move in straight lines forever.
+\choice The force exerted on an object is equal to its mass times its acceleration.
+\end{choices}
+\qsppp
+\question[2] When you use your arms to throw a baseball upwards from the surface of the Earth, the ball briefly accelerates upwards at the beginning of your toss. During this moment, which of the following quantities associated with the baseball has the \textbf{same} magnitude as a corresponding quantity associated with you?
+\qsppp
+\begin{choices}
+\CorrectChoice The force exerted by your arms on the ball.
+\choice The acceleration of the baseball towards you. 
+\choice The velocity of the baseball.
+\choice The mass of the baseball. 
+\end{choices}
+\qsppp
+
+\pagebreak
+\instructionbox{Free Response Questions: Answers must be in \textbf{complete sentences} to receive full credit.}
+
+
+\question[3] A BART train going \SI{80}{mph} on the subway collides head on with a speck of dust. 
+\begin{parts}
+\part How do the forces on the BART train and the speck of dust compare?
+
+\begin{solution}[5cm]
+Newton's Third Law states that the force of the truck on the mosquito is equal in magnitude and opposite in direction to the force of the mosquito on the truck. In symbols:
+\begin{align*}
+\vb{F}_{truck} = - \vb{F}_{mosquito}
+\end{align*}
+\end{solution}
+\part How do their accelerations compare during the impact?
+
+\begin{solution}[10cm]
+Although the forces on the truck and mosquito are of equal strength, the accelerations are very different. Call the mass of the mosquito $m$ and the mass of the truck $M$. Both experience the same magnitude of force $F$, but the truck experiences a deceleration of 
+\begin{align*}
+a_{truck} = \frac{F}{M}
+\end{align*}
+while the mosquito experiences a deceleration of 
+\begin{align*}
+a_{mosquito} = \frac{F}{m}.
+\end{align*}
+Because $M \gg m$ (the mass of the truck is \textbf{much greater} than the mosquito's), the deceleration of the truck is \textbf{much less} than the mosquito's:
+\begin{align*}
+a_{truck} \ll a_{mosquito}.
+\end{align*}
+This is why the mosquito completely stops in its path and is squashed by the truck, but the truck keeps moving as if it had barely been budged at all from its path. 
+\end{solution}
+\end{parts}
+
+\question[3] You are on a tall ladder pushing upwards with all your might against the ceiling of the physics classroom. What is the action force? What is the corresponding reaction force?
+\begin{solution}[1cm]
+The \textbf{action} is the force of your hands pushing on the wall. The \textbf{reaction} is the force of the wall pushing back on your hands. The action and reaction forces have equal magnitude, but opposite direction. 
+\end{solution}
+
+
+\clearpage
+
+\section*{\small \tcbox{Learning Standard 2.4: Free Body Diagrams}}
+\textit{'Twas the night before Christmas, when all through the house... Not a creature was stirring, not even a mouse....}\\
+The Grinch has stolen all of the presents in Whoville! The Grinch has not thought his plan through very carefully, however, and now he needs to bring the presents back to his lair... He decides to employ his little dog Max to pull the sleigh. 
+\question[2] While Max the dog pulls to the left, he creates a tension force $\vb{T}$ in the reigns of the sleigh. As the sleigh budges forwards on the snowy ground, the friction between the pavement and the bottom the sleigh generates a force $\vb{F_{fr}}$ opposing the motion of the sleigh. Draw arrows to represent the \textbf{four} forces acting on the sleigh below. Be sure to label each of the four forces as well. 
+
+% \begin{figure}[h!]
+%     \centering
+%     \vspace{0.5cm} % Add vertical space above the image
+%     \includegraphics[width=0.55\textwidth]{} % Specify image width and file name
+%     \vspace{0.5cm} % Add vertical space below the image
+% \end{figure}
+\question[2] The Grinch, in his cunning and duplicitous ways, managed to steal 50 PlayStations, 30 pairs of Jordans, 500 Macbook Airs, 200 Airpods, and 100 Starbucks gift cards. 
+\begin{center}
+{\ttfamily
+\begin{tabular}{| p{7cm} | p{5cm} |}
+\hline
+\uppercase{Present Type} & \uppercase{Per Unit Mass} (kg) \\ 
+\hline
+PlayStation & 10 \\ 
+\hline
+Pair of Jordans & 5 \\ 
+\hline
+Macbook Air & 12 \\ 
+\hline
+Airpods & 0.5 \\ 
+\hline
+Starbucks gift card & 0.1 \\ 
+\hline
+\end{tabular}}
+\end{center}
+Use the chart above to calculate the total mass ($m$) of the presents in kilograms.
+\qsp
+\pagebreak
+
+\question[2] Use your result from the previous problem to calculate the magnitude of the normal force ($\vb{N}$) that must be supplied by the snowy ground to keep the sleigh from falling downwards through the Earth. Take the acceleration of gravity to be $g=\SI{10}{m/s^2}$.
+\qsp
+\question[2] Instilled with the strength of Christmas spirit, Max is able to pull with a force of $\SI{1200}{N}$, while the friction opposing his motion is $\vb{F_{fr}}=\SI{700}{N}$. What is the \textbf{net horizontal force} ($\sum \vb{F}$) on the sleigh?
+\qsp
+\question[2] Using your results for the mass ($m$) and the net force ($\sum \vb{F}$) from the previous questions, calculate the acceleration ($\vb{a}$) on the sleigh. 
+\qsp
+\end{questions}
+
+
+\end{document}
