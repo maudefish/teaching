@@ -1,0 +1,224 @@
+\documentclass[11pt,addpoints,letterpaper]{exam}
+\usepackage{amsmath,tcolorbox,mdframed,xcolor}
+\usepackage[top=0.75in, bottom=0.85in, left=1in, right=1in]{geometry} % Adjust margins
+
+\usepackage{siunitx}
+\usepackage{nccmath}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{xfrac}
+\usepackage{wrapfig}
+
+\usepackage{float}
+
+
+\noprintanswers
+
+
+% Define variables
+\newcommand{\instructor}{Mr. Rodriguez}
+\newcommand{\coursename}{Conceptual Physics A}
+\newcommand{\term}{Fall}
+\newcommand{\courseyear}{2024} % Renamed \year to \courseyear to avoid conflict
+\newcommand{\instructions}{}
+\newcommand{\worksheetname}{Final Exam Review}
+\newcommand{\qsp}{\vspace{5cm}}
+\newcommand{\qspp}{\vspace{2.5cm}}
+\newcommand{\qsppp}{\vspace{0.5cm}}
+
+\tcbset{
+    myboxstyle/.style={
+        colback=white,        % Background color
+        colframe=black,       % Border color
+        boxrule=0.5pt,        % Border thickness
+        arc=5mm,              % Rounding radius
+        boxsep=2mm,           % Padding around text
+        left=4pt, right=4pt,  % Inner padding on left and right
+    }
+}
+\newcommand{\equationbox}[2]{
+\begin{center}
+\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
+% \vspace{-0.2in} % Tightens the space between the title and content
+\begin{flushleft}
+\begin{align*}
+#2
+\end{align*}
+\end{flushleft}
+\end{tcolorbox}
+\end{center}
+}
+\newcommand{\equationboxx}[2]{
+\begin{center}
+\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
+\begin{flushleft}
+#2
+\end{flushleft}
+\end{tcolorbox}
+\end{center}
+}
+\newcommand{\instructionbox}[1]{\begin{center}\fbox{\fbox{{\centering #1}}}\end{center}}
+
+\newcommand{\learningStandard}[1]{
+    \small
+    \tcbox[colback=gray!10, colframe=black, boxrule=0.5mm, sharp corners=southwest]{
+        \textbf{#1} \hspace{0.5cm} % Spacing between title and vertical rule
+        \textcolor{gray}{\vrule height 10pt width 0.3pt}\hspace{0.5cm} % Lighter and thinner vertical rule
+        \textbf{Score:} \rule{1.5cm}{0.5pt} /10
+    }
+}
+
+\newtcolorbox{learningStandardBox}[2]{%
+    title={Learning Standard #1}, % Title with manual input for the standard number
+    fonttitle=\bfseries\small,  % Title font style
+    colback=gray!15, % Background color for main content
+    colframe=black, % Frame color
+    coltitle=black!80, % Font color for title
+    colbacktitle=gray!60, % Background color for title
+    boxrule=0.5mm, % Border thickness
+    sharp corners=south, % Rounded top corners only
+    width=\textwidth, % Full text width
+    halign=center, % Center-align content
+    top=10pt, % Adds extra space at the top to move content down
+}
+\newcommand{\standardBox}[2]{%
+    \begin{learningStandardBox}{#1}{#2} % Passes number and name as arguments
+        \begin{minipage}[t]{0.5\textwidth} % Left section for standard name
+            \textit{#2} % Italicized name of the standard
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.25\textwidth} % Middle section for score
+            % \textbf{} \rule{1.5cm}{0.5pt} /10
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.2\textwidth} % Right section for grade
+            \textbf{} \phantom{1.2cm}
+        \end{minipage}
+    \end{learningStandardBox}
+}
+%%%%%%%%%%%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Place name, section, and instructor details at the top left
+\vspace*{-0.2in} % Adjust this to control vertical spacing from the top of the page
+\noindent
+\makebox[0.7\textwidth][l]{Name:\enspace\hrulefill} \hfill \makebox[0.3\textwidth]{ Period:\enspace\hrulefill} \\[1cm]
+\noindent
+\makebox[0.7\textwidth][l]{Instructor: \enspace\texttt{\instructor}}\hfill \hspace*{0pt}\hfill{Total Score:\underline{\hspace{2cm}}/\numpoints}
+\vspace{0.5in} % Space before the title
+
+
+% Manually add the title without using \maketitle
+\begin{centering}
+\noindent\textbf{\Large \worksheetname} \\[0.1in]
+\noindent\texttt{\coursename} \\
+\noindent\textit{\term\ \courseyear} \\
+\end{centering}
+
+\vspace{0.2in}
+
+% Special Instructions
+% \begin{center}
+% \fbox{\fbox{\parbox{5.5in}{\centering
+% \instructions}}}
+% \end{center}
+
+
+% Relevant Equations box with no extra space and left-aligned equations
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LS 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section*{\small \tcbox{Learning Standard 3.1: The Law of Conservation of Energy}}
+% \section*{\learningStandard{Learning Standard 3.1: The Law of Conservation of Energy}}
+\standardBox{3.1}{The Law of Conservation of Energy}
+
+
+\subsection*{Key Concepts}
+\begin{itemize}
+    \item Understand the law of conservation of energy: energy cannot be created or destroyed, only transferred or transformed.
+    \item Know the SI units of energy (Joules, J).
+\end{itemize}
+
+\subsection*{Practice}
+\begin{itemize}
+    \item Define and explain the law of conservation of energy.
+    \item Identify different types of energy (kinetic, potential, chemical, etc.) and how energy is converted in systems like:
+    \begin{itemize}
+        \item Speakers
+        \item Solar panels
+        \item Engines
+        \item Flashlights
+        \item Bow and arrow
+        \item Turbines
+    \end{itemize}
+    \item Example question: How does a flashlight convert energy?
+\end{itemize}
+
+\subsection*{Application}
+Relate energy transformations on Earth to the Sun as the primary energy source and how humans, animals, plants, and fossil fules play into that network. 
+
+
+\pagebreak
+
+\standardBox{3.2}{Problem Solving via Conservation of Energy}
+\subsection*{Key Concepts}
+\begin{itemize}
+    \item Use the conservation of energy principle (e.g. potential energy turning into kinetic energy or vice versa) to solve problems.
+    \item Understand energy relationships in motion, for example the kid on the swing problem from class.
+\end{itemize}
+
+\subsection*{Practice}
+\begin{itemize}
+    \item Derive the minimum maximum height that a roller skater will go up a ramp given that their starting speed is $v=\SI{10}{m/s}$ and neglecting friction and air resistance.
+    \item Work through problems involving:
+    \begin{itemize}
+        \item Gravitational potential energy ($PE = mgh$)
+        \item Kinetic energy ($KE = \frac{1}{2}mv^2$)
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Application}
+Interpret how increasing speed or energy affects motion, especially in systems where energy transforms from potential to kinetic or vice versa.
+
+\pagebreak
+\standardBox{3.3}{Power and Generators}
+\subsection*{Key Concepts}
+\begin{itemize}
+    \item Understand power as the rate of energy transfer ($P = \frac{\Delta E}{\Delta t}$).
+    \item Calculate potential energy and power for systems like hydroelectric turbines.
+\end{itemize}
+
+\subsection*{Practice}
+\begin{itemize}
+    \item Calculate gravitational potential energy for falling water (e.g., Niagra Falls) using $PE = mgh$.
+    \item Determine the theoretical power output of water flow and relate it to powering devices (e.g., number of $20\,\mathrm{W}$ light bulbs).
+\end{itemize}
+
+\subsection*{Application}
+Solve real-world problems involving power generation and energy efficiency. Example problem: The water at Niagara Falls flows from a height of \SI{50}{m} and \SI{5.0e5}{kg} of water flows over the falls every second. Assume 85 percent of the gravitational potential energy of the water is converted into electrical power by a hydroelectric turbine. What is the usable power of this system in Watts?
+
+
+
+\pagebreak
+\standardBox{3.4}{Energy and Automobile Safety}
+\subsection*{Key Concepts}
+\begin{itemize}
+    \item Understand kinetic energy and how it relates to velocity ($KE = \frac{1}{2}mv^2$).
+    \item Analyze work and force in stopping a car ($W = Fd$).
+\end{itemize}
+
+\subsection*{Practice}
+\begin{itemize}
+    \item Calculate the initial kinetic energy of a car given mass and velocity.
+    \item Determine stopping distance when a constant force is applied.
+    \item Explore the effects of changing the speed on kinetic energy and stopping distance.
+\end{itemize}
+
+\subsection*{Application}
+Discuss the relationship between speed, kinetic energy, and crash severity. Example question: If speed triples, by what factor does stopping distance increase?
+
+
+
+
+\end{document}
