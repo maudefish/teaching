@@ -1,98 +1,4 @@
-\documentclass[11pt,addpoints,letterpaper]{exam}
-\usepackage{amsmath,tcolorbox,mdframed,xcolor}
-\usepackage[top=0.75in, bottom=0.85in, left=1in, right=1in]{geometry} % Adjust margins
-
-\usepackage{siunitx}
-\usepackage{nccmath}
-\usepackage{physics}
-\usepackage{tikz}
-\usepackage{multicol}
-
-
-\noprintanswers
-
-
-% Define variables
-\newcommand{\instructor}{Mr. Rodriguez}
-\newcommand{\coursename}{Conceptual Physics A}
-\newcommand{\term}{Winter}
-\newcommand{\courseyear}{2024} % Renamed \year to \courseyear to avoid conflict
-\newcommand{\instructions}{}
-\newcommand{\worksheetname}{Assignment Template}
-\newcommand{\qsp}{\vspace{5cm}}
-\newcommand{\qspp}{\vspace{2.5cm}}
-\newcommand{\qsppp}{\vspace{0.5cm}}
-
-\tcbset{
-    myboxstyle/.style={
-        colback=white,        % Background color
-        colframe=black,       % Border color
-        boxrule=0.5pt,        % Border thickness
-        arc=5mm,              % Rounding radius
-        boxsep=2mm,           % Padding around text
-        left=4pt, right=4pt,  % Inner padding on left and right
-    }
-}
-\newcommand{\equationbox}[2]{
-\begin{center}
-\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
-% \vspace{-0.2in} % Tightens the space between the title and content
-\begin{flushleft}
-\begin{align}
-#2
-\end{align}
-\end{flushleft}
-\end{tcolorbox}
-\end{center}
-}
-\newcommand{\equationboxx}[2]{
-\begin{center}
-\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
-\begin{flushleft}
-#2
-\end{flushleft}
-\end{tcolorbox}
-\end{center}
-}
-\newcommand{\instructionbox}[1]{\begin{center}\fbox{\fbox{{\centering #1}}}\end{center}}
-
-\newcommand{\learningStandard}[1]{
-    \small
-    \tcbox[colback=gray!10, colframe=black, boxrule=0.5mm, sharp corners=southwest]{
-        \textbf{#1} \hspace{0.5cm} % Spacing between title and vertical rule
-        \textcolor{gray}{\vrule height 10pt width 0.3pt}\hspace{0.5cm} % Lighter and thinner vertical rule
-        \textbf{Score:} \rule{1.5cm}{0.5pt} /10
-    }
-}
-
-\newtcolorbox{learningStandardBox}[2]{%
-    title={Learning Standard #1}, % Title with manual input for the standard number
-    fonttitle=\bfseries\small,  % Title font style
-    colback=gray!15, % Background color for main content
-    colframe=black, % Frame color
-    coltitle=black!80, % Font color for title
-    colbacktitle=gray!60, % Background color for title
-    boxrule=0.5mm, % Border thickness
-    sharp corners=south, % Rounded top corners only
-    width=\textwidth, % Full text width
-    halign=center, % Center-align content
-    top=10pt, % Adds extra space at the top to move content down
-}
-\newcommand{\standardBox}[2]{%
-    \begin{learningStandardBox}{#1}{#2} % Passes number and name as arguments
-        \begin{minipage}[t]{0.5\textwidth} % Left section for standard name
-            \textit{#2} % Italicized name of the standard
-        \end{minipage}%
-        \hfill
-        \begin{minipage}[t]{0.25\textwidth} % Middle section for score
-            \textbf{Score:} \rule{1.5cm}{0.5pt} /10
-        \end{minipage}%
-        \hfill
-        \begin{minipage}[t]{0.2\textwidth} % Right section for grade
-            \textbf{Grade:} \phantom{1.2cm}
-        \end{minipage}
-    \end{learningStandardBox}
-}
+\input{assignmentpreamble.tex}
 %%%%%%%%%%%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
@@ -109,35 +15,104 @@
 \makebox[0.25\textwidth][l]{\enspace\texttt{\underline{\term\ \courseyear}}}\hfill 
 \vspace{0.5in} % Space before the title
 
-
-% Manually add the title without using \maketitle
 \begin{centering}
 \noindent\textbf{\Large \worksheetname} \\[0.1in]
 \end{centering}
-
 \vspace{0.1in}
+\epigraph{\itshape``Mathematics is the alphabet with which God has written the universe.''}{---Galileo Galilei}
+\qsp
+% Math is the language of physics. Although the scope of this course will be largely \emph{qualitative} (\emph{i.e.} conceptual), we will need to have a certain level of mathematical fluency under our belts in order to describe the universe around us. Physics is by nature a \emph{quantitative} science--- in other words: numbers are necessary to accurately and precisely depict the world around us. 
+\section*{Single Variable Equations}
+In your algebra course, you have learned how to solve equations for a particular variable. For example, you have undoubtably encountered many problems of the form,  
+\qsp
 
-% Special Instructions
-% \begin{center}
-% \fbox{\fbox{\parbox{5.5in}{\centering
-% \instructions}}}
-% \end{center}
-
-
-% Relevant Equations box with no extra space and left-aligned equations
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LS 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section*{\small \tcbox{Learning Standard 3.1: The Law of Conservation of Energy}}
-% \section*{\learningStandard{Learning Standard 3.1: The Law of Conservation of Energy}}
-
-\instructionbox{Special instructions go here.}
-
+\exampleBox{
+\emph{Solve the following equation for $x$:} 
+\begin{align*}
+2x + 6 = 10. 
+\end{align*}
+}{How do we do it? Well, we may either stare at the equation long enough and guess the solution (Think: \emph{``What number when doubled and added to six gives ten?''}), or we may fall back and the tried and true algebraic manipulations you have mastered in your math courses. The fundamental rule in solving any equation is, as always:
+\begin{enumerate}
+\item \textbf{All mathematical operations must be applied to both sides of the equation.}
+\end{enumerate}
+To wit: 
+\begin{align*}
+2x + 6 &= 10 & & \text{(write down the problem)} \\
+2x &= 4 & & \text{(subtract 6 from both sides)} \\
+\Aboxed{x &= 2.} & & \text{(divide both sides by 2)} 
+\end{align*}
+It is always good practice to box your final answers.}
+\qsp
+Now give it a try yourself:
 \begin{questions}
 
-\question[1] Which of the following statements best describes the law of conservation of energy? 
+\question Solve $2x-4 = 2$ for $x$. 
+\ifprintanswers
+\begin{solution}
+\begin{align*}
+2x - 4 &= 2 & & \text{(write down the problem)} \\
+2x &= 6 & & \text{(add 4 to both sides)} \\
+\Aboxed{x &= 3.} & & \text{(divide both sides by 2)}
+\end{align*}
+\end{solution}
+\else
+\qsppp
+\fi
 
+\question Solve $4x - 9 = 7$ for $x$.
+\ifprintanswers
+\begin{solution}
+\begin{align*}
+4x - 9 &= 7 & & \text{(write down the problem)} \\
+4x &= 16 & & \text{(add 9 to both sides)} \\
+\Aboxed{x &= 4.} & & \text{(divide both sides by 4)}
+\end{align*}
+\end{solution}
+\else
+\qsppp
+\fi
+
+\question Solve $6x - 3 = 3x + 9$ for $x$.
+\ifprintanswers
+\begin{solution}
+\begin{align*}
+6x - 3 &= 3x + 9 & & \text{(write down the problem)} \\
+3x - 3 &= 9 & & \text{(subtract $3x$ from both sides)} \\
+3x &= 12 & & \text{(add 3 to both sides)} \\
+\Aboxed{x &= 4.} & & \text{(divide both sides by 3)}
+\end{align*}
+\end{solution}
+\else
+\qsppp
+\fi
 \end{questions}
+\section*{Double Variable Equations}
+Oftentimes in physics problems, there is more than one variable involved. If there are two --- call them $x$ and $y$ --- we might refer to them as \emph{independent} and \emph{dependent} variables, respectively. The naming convention reminds us that $y$ depends on $x$; if we change $x$, we expect $y$ to change as well. 
+
+In a science experiment, for example, $x$ might represent the amount of water given each day to a plant in mL (milliliters), while $y$ might represent the height of the plant in cm (centimeters). 
+\qsp
+\exampleBox{
+\emph{Solve for $y$. Then interpret the physical meaning of the equation:} 
+\begin{align*}
+2y - 10x &= 20. 
+\end{align*}
+}{
+\begin{align*}
+2y - 10x &= 20 & & \text{(write down the problem)} \\
+2y &= 10x + 20 & & \text{(add \( 10x \) to both sides)} \\
+\Aboxed{y &= 5x + 10.} & & \text{(divide both sides by 2)}
+\end{align*}
+Because the equation takes the familiar $y=mx + b$ form, we could say that ``$y$ increases \textbf{linearly} with $x$.'' In the context of the scientific situation described above the example box, this equation might then be interpreted to be 
+\begin{align*}
+\Aboxed{\text{(height of plant in cm)} &= 5\times\text{(water given to plant in mL)} + 10.} 
+\end{align*}
+If we knew that a particular plant was given $x=\SI{5}{mL}$ of water, say, we could plug this into our equation to find the expected height of the plant: 
+\begin{align*}
+y &= 5(5) + 10.} & & \text{(plug in $x=5$)} \\
+y &= 25 + 10 & & \text{(add the numbers)} \\
+\Aboxed{y &= \SI{35}{cm}} & & \text({})} 
+\end{align*}
+}
 
 
 \end{document}
