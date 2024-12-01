@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.9)  30 NOV 2024 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.9)  30 NOV 2024 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,11 +844,86 @@ Package: nextpage 2009/09/03 v1.1a additional page commands
 \afterepigraphskip=\skip153
 \epigraphwidth=\skip154
 \epigraphrule=\skip155
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
+y
+Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen294
+\l__xtemplate_tmp_int=\count371
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip156
+)
+Package: xfrac 2022-01-12 L3 Experimental split-level fractions
+\l__xfrac_slash_box=\box133
+\l__xfrac_tmp_box=\box134
+\l__xfrac_denominator_bot_sep_dim=\dimen295
+\l__xfrac_numerator_bot_sep_dim=\dimen296
+\l__xfrac_numerator_top_sep_dim=\dimen297
+\l__xfrac_slash_left_sep_dim=\dimen298
+\l__xfrac_slash_right_sep_dim=\dimen299
+\l__xfrac_slash_left_muskip=\muskip18
+\l__xfrac_slash_right_muskip=\muskip19
+
+Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
+(xtemplate)             line 80.
+
 ))
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 3.
+ (./mathpractice.aux
 
-(./mathpractice.aux)
+LaTeX Warning: Label `question@1' multiply defined.
+
+
+LaTeX Warning: Label `question@2' multiply defined.
+
+
+LaTeX Warning: Label `question@3' multiply defined.
+
+
+LaTeX Warning: Label `question@4' multiply defined.
+
+
+LaTeX Warning: Label `question@1' multiply defined.
+
+
+LaTeX Warning: Label `part@1@1' multiply defined.
+
+
+LaTeX Warning: Label `part@1@2' multiply defined.
+
+
+LaTeX Warning: Label `question@2' multiply defined.
+
+
+LaTeX Warning: Label `part@2@1' multiply defined.
+
+
+LaTeX Warning: Label `part@2@2' multiply defined.
+
+
+LaTeX Warning: Label `question@3' multiply defined.
+
+
+LaTeX Warning: Label `part@3@1' multiply defined.
+
+
+LaTeX Warning: Label `part@3@2' multiply defined.
+
+
+LaTeX Warning: Label `question@4' multiply defined.
+
+
+LaTeX Warning: Label `question@5' multiply defined.
+
+)
 \openout1 = `mathpractice.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -865,19 +940,18 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-
-(/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count371
-\scratchdimen=\dimen294
-\scratchbox=\box133
-\nofMPsegments=\count372
-\nofMParguments=\count373
+\scratchcounter=\count372
+\scratchdimen=\dimen300
+\scratchbox=\box135
+\nofMPsegments=\count373
+\nofMParguments=\count374
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count374
-\MPscratchDim=\dimen295
-\MPnumerator=\count375
-\makeMPintoPDFobject=\count376
+\MPscratchCnt=\count375
+\MPscratchDim=\dimen301
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks44
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -938,31 +1012,56 @@ Overfull \hbox (4.86665pt too wide) in paragraph at lines 7--17
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-This exam contains 3 questions with 0 parts, 0 subparts, and 0 subsubparts.
+[2] [3] [4]
+LaTeX Font Info:    Calculating math sizes for size <7.665> on input line 198.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.83249> not available
+(Font)              size <5> substituted on input line 198.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.83249> not available
+(Font)              size <5> substituted on input line 198.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.83249> not available
+(Font)              size <5> substituted on input line 198.
+
+[5] [6] [7]
+This exam contains 14 questions with 14 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
-(./mathpractice.aux) ) 
+(./mathpractice.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 2.90001pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 22657 strings out of 478268
- 491325 string characters out of 5846348
- 767847 words of memory out of 5000000
- 40526 multiletter control sequences out of 15000+600000
- 474899 words of font info for 48 fonts, out of 8000000 for 9000
+ 23180 strings out of 478268
+ 505508 string characters out of 5846348
+ 791057 words of memory out of 5000000
+ 41035 multiletter control sequences out of 15000+600000
+ 476942 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,16n,107p,571b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb>
-Output written on mathpractice.pdf (2 pages, 99919 bytes).
+ 104i,22n,107p,571b,809s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on mathpractice.pdf (7 pages, 130158 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -22,8 +22,8 @@
 \epigraph{\itshape``Mathematics is the alphabet with which God has written the universe.''}{---Galileo Galilei}
 \qsp
 % Math is the language of physics. Although the scope of this course will be largely \emph{qualitative} (\emph{i.e.} conceptual), we will need to have a certain level of mathematical fluency under our belts in order to describe the universe around us. Physics is by nature a \emph{quantitative} science--- in other words: numbers are necessary to accurately and precisely depict the world around us. 
-\section*{Single Variable Equations}
-In your algebra course, you have learned how to solve equations for a particular variable. For example, you have undoubtably encountered many problems of the form,  
+\section{Single Variable Equations}
+In your algebra course, you have learned how to solve equations for a particular variable. For example, you have undoubtedly encountered many problems of the form,  
 \qsp
 
 \exampleBox{
@@ -85,8 +85,35 @@ Now give it a try yourself:
 \else
 \qsppp
 \fi
+\question Solve \( 3y + 2 = 14 \) for \( y \).
+\ifprintanswers
+\begin{solution}
+\begin{align*}
+3y + 2 &= 14 & & \text{(write down the problem)} \\
+3y &= 12 & & \text{(subtract 2 from both sides)} \\
+\Aboxed{y &= 4.} & & \text{(divide both sides by 3)}
+\end{align*}
+\end{solution}
+\else
+\qsppp
+\fi
+
+\question Solve \( 5z - 8 = 27 \) for \( z \).
+\ifprintanswers
+\begin{solution}
+\begin{align*}
+5z - 8 &= 27 & & \text{(write down the problem)} \\
+5z &= 35 & & \text{(add 8 to both sides)} \\
+\Aboxed{z &= 7.} & & \text{(divide both sides by 5)}
+\end{align*}
+\end{solution}
+\else
+\qsppp
+\fi
+
 \end{questions}
-\section*{Double Variable Equations}
+\newpage
+\section{Double Variable Equations}
 Oftentimes in physics problems, there is more than one variable involved. If there are two --- call them $x$ and $y$ --- we might refer to them as \emph{independent} and \emph{dependent} variables, respectively. The naming convention reminds us that $y$ depends on $x$; if we change $x$, we expect $y$ to change as well. 
 
 In a science experiment, for example, $x$ might represent the amount of water given each day to a plant in mL (milliliters), while $y$ might represent the height of the plant in cm (centimeters). 
@@ -108,11 +135,100 @@ Because the equation takes the familiar $y=mx + b$ form, we could say that ``$y$
 \end{align*}
 If we knew that a particular plant was given $x=\SI{5}{mL}$ of water, say, we could plug this into our equation to find the expected height of the plant: 
 \begin{align*}
-y &= 5(5) + 10.} & & \text{(plug in $x=5$)} \\
+y &= 5(5) + 10 & & \text{(plug in \( x = 5 \))} \\
 y &= 25 + 10 & & \text{(add the numbers)} \\
-\Aboxed{y &= \SI{35}{cm}} & & \text({})} 
+\Aboxed{y &= \SI{35}{cm} } & & \text{(the expected height of the plant is \( \SI{35}{cm} \))}
 \end{align*}
 }
+\begin{questions}
+\question 
+\begin{parts}
+\part Solve $2x + 3y = 12$ for $y$. 
+\qspp
+\part If $x=4$, what is $y$?
+\qspp
+\end{parts}
+\qsppp
+\question
+\begin{parts}
+\part Solve $5a - 2b = 20$ for $b$. 
+\qspp
+\part If $a = 6$, what is $b$?
+\qspp
+\end{parts}
+\question
+\begin{parts}
+\part Solve $\frac{1}{f} = g$ for $f$. 
+\qspp
+\part If $g = 2$, what is $f$?
+\qspp
+\end{parts}
+\question 
+\begin{parts}
+\part Say that you are (quickly) walking to class. Every 1 second, you walk 2 meters. Could you write an equation that gives you the distance $d$ that you walk in terms of the seconds that you are walking (call the number of seconds $t$)?
+\qsppp
+\part Using your equation from the previous part, calculate far would you be able to walk in 60 seconds.
+\qsppp
+\end{parts}
+\end{questions}
 
+\newpage
+\section{Full-Variable Equations}
+It is also possible (and quite common) for physical equations to contain more than two variables. For example, say that the average speed (velocity) of your car $v$ is equal to the total distance $d$ traveled divided by the time $t$ of travel. The equation that describes this situation would be 
+\begin{align*}
+v &= \frac{d}{t}.
+\end{align*}
+If you were to travel $d=\SI{100}{mi}$ in $t=\SI{2}{hr}$, your average speed would be 
+\begin{align*}
+v &= \frac{\SI{100}{mi}}{\SI{2}{hr}} = \SI{50}{mph}.
+\end{align*}
+\exampleBox{
+Say that you are on the freeway going $v=\SI{65}{mph}$. How far will you travel in $\SI{0.5}{hr}$?
+}
+{
+To solve this problem, we need to rearrange the velocity equation $v = \sfrac{d}{t}$ for our desired variable, namely the distance $d$:
+\begin{align*}
+v &= \frac{d}{t} & & \text{(start with the given equation)} \\
+t \times v &= \frac{d}{t} \times t & & \text{(multiply both sides by t)} \\
+t \times v &= \frac{d}{\bcancel{t}} \times \bcancel{t} & & \text{(cancel the t's)} \\
+d &= v\,t & & \text{(swap left and right sides of the equation)} \\
+d &= (\SI{65}{mph})(\SI{0.5}{hr}) & & \text{(plug in the given values)} \\
+\Aboxed{d &= \SI{32.5}{mi} }& & \text{(box final answer)}
+\end{align*}
+}
+\begin{questions}
+\question Given the equation $F=ma$,
+\begin{parts}
+\part Solve for $m$ in terms of $F$ and $a$. Your answer will be a fraction.
+\qsppp
+\part Solve for $a$ in terms of $F$ and $m$. Your answer again will be a fraction. 
+\qsppp
+\end{parts}
+\question
+\begin{parts}
+\part Solve the velocity equation $v=d/t$ for the time $t$.
+\qsppp
+\part Use your result from the previous part to find how long would it take you to travel $d=\SI{200}{mi}$ if you are going $v=\SI{65}{mph}$. 
+\qsppp
+\end{parts}
 
+\question The speed of light can be written as $c=\lambda f$, where $c$ is the speed of light, $\lambda$ is the wavelength of light, and $f$ is the frequency of the light. (By the way, the Greek letter $\lambda$ is pronounced ``lamb-dah''.)
+\begin{parts}
+\part Solve for the frequency $f$ in terms of $c$ and $\lambda$.
+\qsppp
+\part If the speed of light is $c=\SI{300000000}{m/s}$ and the wavelength of a beam of light is $\lambda=\SI{10}{m}$, what is the frequency $f$ of the beam of light?
+\qsppp
+\end{parts}
+\question \emph{Challenge Problem:} Consider the equation
+\begin{align*}
+\frac{F}{A} = P + \frac{B}{C}.
+\end{align*}
+How would you go about solving for $C$ in terms of the other 4 variables?
+\qsppp
+\question \emph{Challenge Problem:} Consider the following two equations:
+\begin{align*}
+E =& hf & & c = \lambda f. 
+\end{align*}
+The first equation represents the energy of a packet of light in terms of its frequency and a constant $h$. Use both equations to solve for $E$ in terms of $h$, $c$, and $\lambda$. 
+\end{questions}
 \end{document}
