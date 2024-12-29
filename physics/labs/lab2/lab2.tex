@@ -26,37 +26,72 @@
 \epigraph{\itshape``What we know is a drop, what we don't know is an ocean.''}{---Isaac Newton}
 \qsp
 % Math is the language of physics. Although the scope of this course will be largely \emph{qualitative} (\emph{i.e.} conceptual), we will need to have a certain level of mathematical fluency under our belts in order to describe the universe around us. Physics is by nature a \emph{quantitative} science--- in other words: numbers are necessary to accurately and precisely depict the world around us. 
-\textbf{\Large Objective}
+\textbf{\\\Large Objective\\}
 
-\qsp
-Show that under uniformly accelerated motion, the position $x(t)$ of an object increases quadratically with time, while the speed $v(t)$ of an object increases linearly with time. If the acceleration is $a$, this means that the following equations hold true:
-\equationboxx{1D Kinematics Equations}{
-\begin{align*}
-x(t) &= \frac{1}{2} a t^2 & & \text{(position as a function of time)}\\
-v(t) &= at & & \text{(velocity as a function of time)}
-\end{align*}
-}
-\qsp
+
+Show that under uniformly accelerated motion, the following statements hold true:
+\begin{itemize}
+\item The position $x(t)$ of an object increases quadratically with time. In other words, the graph of the position vs. time is a parabola. 
+\item The speed $v(t)$ of an object increases linearly with time. In other words, the graph of the speed vs. time is a straight line. 
+\end{itemize}
+% \equationboxx{1D Kinematics Equations}{
+% \begin{align*}
+% x(t) &= \frac{1}{2} a t^2 & & \text{(position as a function of time)}\\
+% v(t) &= at & & \text{(velocity as a function of time)}
+% \end{align*}
+% }
+% \equationboxx{Kinematic Quantity Definitions}{
+% \begin{align*}
+% x &=  \text{position [cm]} \\ 
+% t &=  \text{time [ms]} \\
+% v &= \text{speed [cm/ms]} \\ 
+% \Delta x &= \text{displacement (the \textbf{difference} between two positions)}\\
+% \Delta t &= \text{time interval (the \textbf{difference} between two times)}\\
+% v &= \Delta x / \Delta t = \text{(speed is the change in position divided by change in time)}
+% \end{align*}
+% }
+\textbf{\\\Large Definitions\\}
+\begin{table}[h!]
+\centering
+\captionsetup{font=small, labelfont=bf}
+\caption{Fundamental Kinematic Quantities for Lab 2}
+\label{tab:kinematics}
+\begin{tabular}{@{} l c c c @{}}
+\toprule
+\textbf{Quantity} & \textbf{Symbol} & \textbf{Notes}  & \textbf{Unit} \\
+\midrule
+Position    & $x$ & & centimeters (cm) \\
+Time & $t$ & & milliseconds (ms) \\
+Displacement & $\Delta x$ & change in position & centimeters (cm)\\
+Time Interval & $\Delta t$ & change in time & milliseconds (ms)\\
+Speed & $v$ & $v = \frac{\Delta x}{\Delta t}$ & centimeters per millisecond (cm/ms) \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \textbf{\\\Large Pre-lab Questions\\}
 
 \begin{questions}
 
-\question[\half] Say you have two consecutive position data points $x_1=\SI{1}{cm}$ and $x_2=\SI{2}{cm}$. What is the magnitude of the displacement $\Delta x$ between the two points?
+\question[\half] Say you are measuring the positions of two consecutive dots on a piece of ticker tape. Your find these two points to be located at $x_1=\SI{1}{cm}$ and $x_2=\SI{7}{cm}$. What is the magnitude of the displacement $\Delta x$ between the two points?  
 \qsp
 
 \begin{align*}
 \Delta x = x_2 - x_1 = \underline{\hspace{2.5cm}}
 \end{align*}
+\newpage
+\question[\half] Say that the first dot was measured at $t_1=\SI{1}{ms}$ and the second dot was measured at $t_2=\SI{4}{ms}$. What is the change in time $\Delta t$ between the two times?
+\qsp
+\begin{align*}
+\Delta t = t_2 - t_1 = \underline{\hspace{2.5cm}}
+\end{align*}
 
-\question[\half] Say that the time elapsed between measuring the two positions above was $\Delta t=\SI{1}{ms}$. How could you use the $\Delta x$ from the previous problem and the $\Delta t$ from this problem to find the speed $v$ of the object at that moment in time? The units should be (cm/ms). \\[0.5cm]
+\question[1] Because you know how far the object went ($\Delta x$) and how long it took to go that far ($\Delta t$), you can find the average speed ($v$) of the object in that interval. Calculate the speed $v$ using the equation below. The units should be (cm/ms). \\[0.5cm]
 \begin{align*}
 v = \frac{\Delta x}{\Delta t} = \underline{\hspace{2.5cm}}
 \end{align*}
 \newline
-\question[\half] On a position vs. time graph, what does the slope represent physically?\\[2.5cm]
 
-\question[\half] On a velocity vs. time graph, what does the slope represent physically?\\[2.5cm]
 
 \question[1] If you were to set the ticker device to 10 Hz (10 clicks per second),
 
