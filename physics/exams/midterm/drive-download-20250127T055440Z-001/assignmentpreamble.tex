@@ -1,0 +1,155 @@
+
+
+\documentclass[11pt,addpoints,letterpaper]{exam}
+\usepackage{adjustbox} % Add this to the preamble
+
+\usepackage{amsmath,tcolorbox,mdframed,xcolor}
+\usepackage[top=0.75in, bottom=0.85in, left=1in, right=1in]{geometry} % Adjust margins
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{nccmath}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{epigraph}
+\usepackage{cancel}
+\usepackage{xfrac}
+\usepackage{pgfplots}
+\usepackage{array}   % For alignment
+\usepackage{booktabs} % For better horizontal lines
+\usepackage{caption} % For caption formatting
+\usepackage{graphicx} % For scaling tables if needed
+
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt}
+
+\noprintanswers
+
+\newcommand{\Section}[1]{
+\textbf{\\\Large #1\\}
+}
+\newcommand{\labheader}[4]{%
+  \vspace*{-0.2in} % Adjust vertical spacing
+  \noindent
+  \makebox[0.65\textwidth][l]{Name:\enspace\hrulefill\,\,\,}
+  \makebox[0.1\textwidth][l]{\,Period:\enspace}
+  \makebox[0.25\textwidth][l]{\hrulefill}\\[0.25cm]
+  \makebox[0.65\textwidth][l]{Instructor: \enspace\texttt{\underline{#1}}}\hfill
+  \makebox[0.1\textwidth][l]{ Course: }\hfill 
+  \makebox[0.25\textwidth][l]{ \texttt{\underline{#2}}}\hfill \\[0.25cm]
+  \makebox[0.65\textwidth]{}\makebox[0.1\textwidth][l]{ Term: }\hfill
+  \makebox[0.25\textwidth][l]{\enspace\texttt{\underline{#3}}}\hfill
+  % \hfill{Score: \underline{\hspace{2cm}}/#4}
+  \vspace{0.5in}
+}
+
+% Define variables
+\newcommand{\instructor}{Mr. Rodriguez}
+\newcommand{\coursename}{Conceptual Physics A}
+\newcommand{\term}{Winter}
+\newcommand{\courseyear}{2024-2025} % Renamed \year to \courseyear to avoid conflict
+\newcommand{\instructions}{}
+\newcommand{\worksheetname}{Lab 4: Inertia and Oscillations}
+\newcommand{\qsppp}{\vspace{4.5cm}}
+\newcommand{\qspp}{\vspace{2.5cm}}
+\newcommand{\qsp}{\vspace{0.6cm}}
+
+\tcbset{
+    myboxstyle/.style={
+        colback=white,        % Background color
+        colframe=black,       % Border color
+        boxrule=0.5pt,        % Border thickness
+        arc=5mm,              % Rounding radius
+        boxsep=2mm,           % Padding around text
+        left=4pt, right=4pt,  % Inner padding on left and right
+    }
+}
+\newcommand{\equationbox}[2]{
+\begin{center}
+\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
+% \vspace{-0.2in} % Tightens the space between the title and content
+\begin{flushleft}
+\begin{align}
+#2
+\end{align}
+\end{flushleft}
+\end{tcolorbox}
+\end{center}
+}
+\newcommand{\equationboxx}[2]{
+\begin{center}
+\begin{tcolorbox}[colframe=black!60, colback=white, arc=5mm, boxrule=0.75pt, title=#1]
+
+#2
+
+\end{tcolorbox}
+\end{center}
+}
+\newcommand{\instructionbox}[1]{\begin{center}\fbox{\fbox{{\centering #1}}}\end{center}}
+
+\newcommand{\learningStandard}[1]{
+    \small
+    \tcbox[colback=gray!10, colframe=black, boxrule=0.5mm, sharp corners=southwest]{
+        \textbf{#1} \hspace{0.5cm} % Spacing between title and vertical rule
+        \textcolor{gray}{\vrule height 10pt width 0.3pt}\hspace{0.5cm} % Lighter and thinner vertical rule
+        \textbf{Score:} \rule{1.5cm}{0.5pt} /10
+    }
+}
+
+\newtcolorbox{learningStandardBox}[2]{%
+    title={Learning Standard #1}, % Title with manual input for the standard number
+    fonttitle=\bfseries\small,  % Title font style
+    colback=gray!15, % Background color for main content
+    colframe=black, % Frame color
+    coltitle=black!80, % Font color for title
+    colbacktitle=gray!60, % Background color for title
+    boxrule=0.5mm, % Border thickness
+    sharp corners=south, % Rounded top corners only
+    width=\textwidth, % Full text width
+    halign=center, % Center-align content
+    top=10pt, % Adds extra space at the top to move content down
+}
+\newcommand{\standardBox}[2]{%
+    \begin{learningStandardBox}{#1}{#2} % Passes number and name as arguments
+        \begin{minipage}[t]{0.5\textwidth} % Left section for standard name
+            \textit{#2} % Italicized name of the standard
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.25\textwidth} % Middle section for score
+            \textbf{Score:} \rule{1.5cm}{0.5pt} /10
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.2\textwidth} % Right section for grade
+            \textbf{Grade:} \phantom{1.2cm}
+        \end{minipage}
+    \end{learningStandardBox}
+}
+\newcommand{\standardBoxnoscore}[2]{%
+    \begin{learningStandardBox}{#1}{#2} % Passes number and name as arguments
+        \begin{minipage}[t]{0.5\textwidth} % Left section for standard name
+            \textit{#2} % Italicized name of the standard
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.25\textwidth} % Middle section for score
+            \textbf{Score:} \rule{1.5cm}{0.5pt} /0
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[t]{0.2\textwidth} % Right section for grade
+            \textbf{Grade: N/A} \phantom{1.2cm}
+        \end{minipage}
+    \end{learningStandardBox}
+}
+
+
+\newcommand{\exampleBox}[2]{%
+    \begin{tcolorbox}[title=\texttt{Example}]
+        \texttt{Problem:} {#1\\} 
+        \texttt{Solution:} {#2}
+    \end{tcolorbox}%
+}
+
+\newcommand{\customsection}[1]{%
+    \vspace{1em} % Add some vertical space above (optional)
+    {\Large\bfseries #1} % Format the title: large font and bold
+    \par\vspace{0.5em}\noindent % Add some space below
+}
