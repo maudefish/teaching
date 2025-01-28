@@ -1,6 +1,6 @@
 \input{assignmentpreamble.tex}
 \addpoints
-\noprintanswers
+\printanswers
 % BEGIN DOC
 \begin{document}
 
@@ -147,8 +147,66 @@ v(t) &= at & & \text{(velocity as a function of time)}
 \newpage
 \question You drop your phone from a height of $\SI{10}{m}$. Take the acceleration of gravity to be $g=\SI{10}{m/s^2}$.
 \begin{parts}
-\part How long does it take to hit the floor?  \qspp
-\part How fast is it going once it hits the floor? \qspp
+\part How long does it take to hit the floor?  
+\ifprintanswers
+\begin{solution}
+Start by identifying the \textbf{knowns} and the \textbf{unknowns}. \qsp 
+
+\textbf{Known:}
+\begin{itemize}
+\item The height is $x=\SI{10}{m}$.
+\item The acceleration is $g=\SI{10}{m/s^2}$.
+\end{itemize}
+\textbf{Unknown:}
+\begin{itemize}
+\item The amount of time ($t$) it takes hit the floor. 
+\end{itemize}
+Now we just need to choose the relevant equation. Looking back to the previous page in the Kinematics Equation box, we see that $x=\frac{1}{2}at^2$ contains the relevant variables. Now we solve for $t$:
+\begin{align*}
+ \frac{1}{2}gt^2 &= x  & & \text{(position equation)}\\
+ g t^2&=2 x  & & \text{(multiply both sides by 2)} \\
+ t^2 &=\frac{2 x}{g} & & \text{(divide both sides by $a$)} \\
+t &=\sqrt{\frac{2 x}{g}}  & & \text{(take square root of both sides)} \\
+t &= \sqrt{\frac{2 \times (\SI{10}{m})}{(\SI{10}{m/s^2})}}  & & \text{(plug in numbers)} \\
+t  &\approx \boxed{\SI{1.4}{s}} & & \text{(simplify)} 
+\end{align*}
+\end{solution} 
+\else
+\qspp
+\fi
+\part How fast is it going once it hits the floor? 
+\ifprintanswers
+\begin{solution}
+This time we need the other equation: $v = at$. 
+
+\qsp
+\textbf{Known:}
+\begin{itemize}
+\item The time is $t=\SI{1.4}{s}$.
+\item The acceleration is $g=\SI{10}{m/s^2}$.
+\end{itemize}
+\textbf{Unknown:}
+\begin{itemize}
+\item The speed $v$ when it hits the floor. 
+\end{itemize}
+\begin{align*}
+v &= at  & & \text{(speed equation)}\\
+v &= (\SI{10}{m/s^2})(\SI{1.4}{s})  & & \text{(plug in numbers)} \\
+v &= \boxed{\SI{14}{m/s}}  & & \text{(simplify)} 
+\end{align*}
+\end{solution} 
+\else
+\qspp
+\fi
+
+\ifprintanswers
+\begin{solution}
+
+\end{solution} 
+\else
+\qspp
+\fi
+
 \end{parts}
 
 \begin{figure}[H]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.9)  27 JAN 2025 00:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.9)  27 JAN 2025 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1235,44 +1235,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--142
 <tickertape.jpeg, id=26, 264.99pt x 191.71625pt>
 File: tickertape.jpeg Graphic file (type jpg)
 <use tickertape.jpeg>
-Package pdftex.def Info: tickertape.jpeg  used on input line 157.
+Package pdftex.def Info: tickertape.jpeg  used on input line 207.
 (pdftex.def)             Requested size: 211.38832pt x 152.93732pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-[4 <./tickertape.jpeg>]
-Overfull \hbox (19.46669pt too wide) in paragraph at lines 171--171
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+[5 <./tickertape.jpeg>]
+Overfull \hbox (19.46669pt too wide) in paragraph at lines 221--221
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-[5] [6]
-Overfull \hbox (19.46669pt too wide) in paragraph at lines 212--212
+[6] [7]
+Overfull \hbox (19.46669pt too wide) in paragraph at lines 262--262
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-[7] [8]
+[8] [9]
 This exam contains 26 questions with 35 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
@@ -1282,29 +1282,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 35862 strings out of 478268
- 895054 string characters out of 5846348
- 1293852 words of memory out of 5000000
- 53527 multiletter control sequences out of 15000+600000
- 475071 words of font info for 48 fonts, out of 8000000 for 9000
+ 35866 strings out of 478268
+ 895095 string characters out of 5846348
+ 1298854 words of memory out of 5000000
+ 53530 multiletter control sequences out of 15000+600000
+ 475607 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,120p,770b,722s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,14n,120p,770b,893s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on midterm.pdf (8 pages, 156328 bytes).
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on midterm.pdf (9 pages, 168810 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
